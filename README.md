@@ -26,3 +26,10 @@
 - Near-zero coupling between container and child apps
   - Container shouldn't assume that a child is using a particular framework
   - Any necessary communication done with callbacks or simple events
+- CSS from one project shouldn't affect another
+- Version control (monorepo vs separate) shouldn't have any impact on the overall project
+  - some people want to use monorepos
+  - some people want to keep everything in a separate repo
+- Container should be able to decide to always use the latest version of a microfrontend or a specific version
+  - container will always use the latest version of a child app (doesn't require a redeploy of container)
+  - container can specify exactly what version of a child it wants to use (requires a redeploy to change)
