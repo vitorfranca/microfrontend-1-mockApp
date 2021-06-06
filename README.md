@@ -35,7 +35,7 @@
   - container can specify exactly what version of a child it wants to use (requires a redeploy to change)
 - Deployment
   - Want to deploy each microfrontend independently (including the container)
-  - Location of child app remoteEntry.js files must be known at buid time
   - Many front-end deployment solutions assume you're deploying a sing project - we need something that can handle multiple different ones
   - Probably need a CI/CD pipeline of some sort
+  - Location of child app remoteEntry.js files must be known at buid time
   - At present, the remoteEntry.js file is fixed, need to think about caching issues
